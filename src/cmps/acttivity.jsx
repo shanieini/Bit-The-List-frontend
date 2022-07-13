@@ -25,7 +25,7 @@ export function ActivityLog({ board, setActivityOpen }) {
             <div className="updates-wrapper-cards flex column">
                 {board.updates && board.updates.map((update, idx) =>
                     <div className="update-card" key={idx}>
-                        <div className="update-header flex">{user?user.username:"guest"}</div>
+                        <div className="update-header flex">{user ? user.username : "guest"}</div>
                         <div className="body-text">{update.text}</div>
                     </div>
                 )}
